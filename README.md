@@ -7,7 +7,7 @@ People
 - USER:sa
 - PASS:
 
-Steps to build and execute:
+## Steps to build and execute:
 - git clone https://github.com/estebanbri/api-people
 - mvn clean install spring-boot:run
 
