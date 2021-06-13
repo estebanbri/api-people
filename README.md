@@ -7,6 +7,9 @@ People
 - USER:sa
 - PASS:
 
+## HEROKU
+- https://api-supervielle-people.herokuapp.com
+
 ## Steps to build and execute:
 - git clone https://github.com/estebanbri/api-people
 - mvn clean install spring-boot:run
