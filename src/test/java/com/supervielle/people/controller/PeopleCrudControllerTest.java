@@ -1,7 +1,6 @@
 package com.supervielle.people.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.supervielle.people.BaseTest;
 import com.supervielle.people.dto.ContactDataDTO;
 import com.supervielle.people.dto.PersonDTOAdd;
 import com.supervielle.people.exception.PeopleException;
@@ -20,6 +19,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 import java.time.LocalDate;
 import java.time.Month;
@@ -32,15 +32,14 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @SpringBootTest
 @AutoConfigureMockMvc
-class PeopleCrudControllerTest extends BaseTest {
+@EnableWebMvc
+class PeopleCrudControllerTest {
 
     @Autowired
     private MockMvc mockMvc;
 
     @MockBean
     private PeopleCrudRepository repository;
-
-
 
     @Autowired
     private ObjectMapper objectMapper;
