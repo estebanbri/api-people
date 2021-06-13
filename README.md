@@ -11,6 +11,9 @@ People
 - git clone https://github.com/estebanbri/api-people
 - mvn clean install spring-boot:run
 
+# SWAGGER 
+http://localhost:8080/swagger-ui.html#/
+
 # PEOPLE RESOURCE
 
 ### Create a new person in people resource
