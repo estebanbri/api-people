@@ -1,15 +1,21 @@
 # api-people
 People
 
-Database (EMBEDDED H2):
-URL: http://localhost:8080/h2-console
-JDBC URL: jdbc:h2:mem:mydb
-USER:sa
-PASS:
+## Database (EMBEDDED H2):
+- URL: http://localhost:8080/h2-console
+- JDBC URL: jdbc:h2:mem:mydb
+- USER:sa
+- PASS:
 
-Steps to build and execute:
+## HEROKU
+- https://api-supervielle-people.herokuapp.com
+
+## Steps to build and execute:
 - git clone https://github.com/estebanbri/api-people
 - mvn clean install spring-boot:run
+
+# SWAGGER 
+http://localhost:8080/swagger-ui.html#/
 
 # PEOPLE RESOURCE
 
