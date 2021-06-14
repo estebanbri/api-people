@@ -35,7 +35,7 @@ from
 join
 (((select count(*) as MALE_QUANTITY_TOTAL from person where gender = 'MALE'))) m
 join
-(select COUNTRY, CAST((count(*) * 100.0 / (select count(country) from person)) AS int) as argentinianPercent
+(select COUNTRY, CAST((count(*) * 100.0 / (select count(country) from person)) AS int) as argentinian_percent
 from person
 group by COUNTRY) a
 
